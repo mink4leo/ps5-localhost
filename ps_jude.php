@@ -24,7 +24,7 @@ $res_jude = $stmt_jude->fetch(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUDGES <?php echo $_GET['j'] ?></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
     <style>
@@ -68,9 +68,8 @@ $res_jude = $stmt_jude->fetch(PDO::FETCH_ASSOC);
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <script>
         $(function() {

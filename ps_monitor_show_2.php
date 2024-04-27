@@ -5,6 +5,8 @@ require_once("app/conn_pdo.php");
 error_reporting(0);
 //ini_set('display_errors', 1);
 
+// echo $_SESSION['match'];
+
 //==============MATCH judNum
 $stmt_match = $db->prepare("SELECT * FROM thannam_match WHERE id = '$_SESSION[match]'");
 $stmt_match->execute();

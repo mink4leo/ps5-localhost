@@ -140,11 +140,12 @@ if ($res['idstart'] <> 0) {
                 <?php echo $psp; ?>
             </div>
             <div class="card-body">
-                <a href="ps_jud01.php?j=<?= $_GET['j'] ?>" class="btn btn-success btn-lg mb-2 btn-block">POOMSAE 1</a>
-                <a href="ps_jud02.php?j=<?= $_GET['j'] ?>" class="btn btn-primary btn-lg mb-2 btn-block">POOMSAE 2</a>
-                <a href="ps_jud_flag.php?j=<?= $_GET['j'] ?>" class="btn btn-danger btn-lg mb-2 btn-block">ยกธง</a>
-                <a href="ps_jud01_new.php?j=<?= $_GET['j'] ?>" class="btn btn-info btn-lg mb-2 btn-block">POOMSAE 1 (New)</a>
-                <a href="ps_jud01_free.php?j=<?= $_GET['j'] ?>" class="btn btn-success btn-lg mb-2 btn-block"  style="background-color: #da30f8;">PS FREE</a>
+                
+                <a href="ps_jud01.php?j=<?= $_GET['j'] ?>" class="btn btn-success btn-lg ">POOMSAE 1</a>
+                <a href="ps_jud02.php?j=<?= $_GET['j'] ?>" class="btn btn-primary btn-lg ">POOMSAE 2</a>
+                <a href="ps_jud_flag.php?j=<?= $_GET['j'] ?>" class="btn btn-danger btn-lg ">ยกธง</a>
+                <a href="ps_jud01_new.php?j=<?= $_GET['j'] ?>" class="btn btn-info btn-lg ">POOMSAE 1 (New)</a>
+                <a href="ps_jud01_free.php?j=<?= $_GET['j'] ?>" class="btn btn-success btn-lg "  style="background-color: #da30f8;">PS FREE</a>
             </div>
 
         </div>

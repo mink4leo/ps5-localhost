@@ -44,8 +44,8 @@ if (isset($_GET['ps_cat'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOTAL SCORE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
@@ -62,7 +62,7 @@ if (isset($_GET['ps_cat'])) {
 <body>
     <?php include('menu.php'); ?>
 
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <h3><?php echo $_SESSION['nameMatch'] ?></h3>
         <div class="row justify-content-between mb-5">
             <div class="col-8">
@@ -150,7 +150,7 @@ if (isset($_GET['ps_cat'])) {
 
 
         <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
 
         <script>
             // $(document).ready(function() {

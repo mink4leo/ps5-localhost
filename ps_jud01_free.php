@@ -24,6 +24,11 @@ if ($res['poomsae'] == '3') {
     $ps = 3;
     // $dataa = 'thannam_champion_poomse3';
 }
+if ($res['poomsae'] == '') {
+    $psp = 'POOMSAE FREE STYLE';
+    $ps = 3;
+    // $dataa = 'thannam_champion_poomse3';
+}
 
 //=====================PLAYER
 $player_select = $db->prepare("SELECT * From thannam_champion_poomsae where id ='$res[idstart]'");
@@ -55,8 +60,8 @@ if (isset($_REQUEST['submitA'])) {
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POOM 1</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"> -->
     <style>
         .btn {
             margin-top: 60px;

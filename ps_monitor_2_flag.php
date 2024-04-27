@@ -10,7 +10,7 @@ require_once('app/conn_pdo.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MONITOR</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="css/bootstrap.min.css">
 
     <style>
         body {
@@ -50,8 +50,8 @@ require_once('app/conn_pdo.php');
             <div id="showscore_flag" class="mt-2"></div>
         </div>
     </center>
-    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script>
         $(function() {
             setInterval(function() {

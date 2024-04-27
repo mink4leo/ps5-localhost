@@ -33,7 +33,7 @@ if (isset($_GET['resetA'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANAGE</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <style>
         .judd {
@@ -203,10 +203,6 @@ if (isset($_GET['resetA'])) {
     <div class="container mt-5">
         <h3><?php echo $_SESSION['nameMatch'] ?></h3>
 
-
-
-
-
         <!DOCTYPE html>
         <!-- Created By CodingLab - www.codinglabweb.com -->
         <html lang="en" dir="ltr">
@@ -215,8 +211,9 @@ if (isset($_GET['resetA'])) {
             <meta charset="UTF-8">
             <title> Responsive Our Team Section | CodingLab </title>
             <link rel="stylesheet" href="style.css">
-            <!-- Fontawesome CDN Link -->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+
+            <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
         </head>
 
@@ -232,7 +229,7 @@ if (isset($_GET['resetA'])) {
 
                                 <div class="card-body">
                                     <div class="main-card">
-                                        
+
                                         <div class="cards">
                                             <div class="card">
                                                 <div class="content">
@@ -279,7 +276,7 @@ if (isset($_GET['resetA'])) {
                                 <div class="card-body">
                                     <h5 class="card-title">SHOW MONITOR</h5>
                                     <div class="d-grid gap-2">
-                                        <a href="ps_monitor.php" target="_blank" class="btn btn-warning"> MONITOR 1</a>
+                                        <!-- <a href="ps_monitor.php" target="_blank" class="btn btn-warning"> MONITOR 1</a> -->
                                         <a href="ps_monitor_2.php" target="_blank" class="btn btn-warning">MONITOR 2</a>
                                         <a href="ps_monitor_2_flag.php" target="_blank" class="btn btn-info">MONITOR FLAG</a>
                                         <a href="ps_monitor_table.php" target="_blank" class="btn btn-warning">TABLE</a>
@@ -297,9 +294,9 @@ if (isset($_GET['resetA'])) {
                                         <a href="ps_admin_flag.php?match=<?= $_SESSION['match'] ?>" class="btn btn-info">ADMIN FLAG</a>
                                         <a href="ps_total_score.php?match=<?= $_SESSION['match'] ?>" class="btn btn-primary">TOTAL SCORE</a>
                                         <a href="?match=<?= $_SESSION['match'] ?>&resetA=yes" onclick="return confirm('Are you sure you want to Reset');" class="btn btn-danger">RESET</a>
-                                        <?php  
+                                        <?php
                                         echo $myIP = gethostbyname(trim(`hostname`));
-?> 
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -338,8 +335,8 @@ if (isset($_GET['resetA'])) {
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

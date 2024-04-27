@@ -55,14 +55,14 @@ if (isset($_REQUEST['submitA'])) {
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POOM 1</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
         .btn {
             margin-top: 60px;
             padding: 20px;
             font-size: 30px;
         }
+
         .form-control-lg {
             font-size: 60px;
         }
@@ -70,9 +70,9 @@ if (isset($_REQUEST['submitA'])) {
 </head>
 
 <body>
- 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <a class="navbar-brand" href="#"><?php echo $row['nameA']; ?></a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark  justify-content-center" style="background-color: #0ac71d;">
+        <a class="navbar-brand" href="ps_jude.php?j=<?php echo $_GET['j']?>"><?php echo $row['nameA']; ?></a>
     </nav>
 
     <div class="container mt-3">

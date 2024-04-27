@@ -3,7 +3,7 @@ session_start();
 require_once("app/conn_pdo.php");
 
 error_reporting(0);
- 
+
 
 if (isset($_REQUEST['submitA'])) {
     $accA = $_REQUEST['accA'];
@@ -100,7 +100,7 @@ if (isset($_GET['del'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POOMSAE SCORE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <style>
         .btn-acc {
             width: 200px;
@@ -258,9 +258,9 @@ if (isset($_GET['del'])) {
                 <span class="success acc_total" style="border:2px solid #333;padding:30px;">
                     <?php
                     if (isset($_SESSION['accTotalA'])) {
-                        echo number_format($_SESSION['accTotalA'],1);
+                        echo number_format($_SESSION['accTotalA'], 1);
                     } else {
-                        echo '4.0'; 
+                        echo '4.0';
                     }
                     ?>
                 </span>
@@ -293,13 +293,13 @@ if (isset($_GET['del'])) {
                 <tr>
                     <td width="20%" style="text-align: center; font-size: 30px; font-weight: bold;">
                         <?php
-                            if (isset($_SESSION['pre1'])) {
-                                $preA1 = $_SESSION['pre1'];
-                            } else {
-                                $preA1 = '2.0';
-                            }
-                            echo $preA1;
-                            ?>
+                        if (isset($_SESSION['pre1'])) {
+                            $preA1 = $_SESSION['pre1'];
+                        } else {
+                            $preA1 = '2.0';
+                        }
+                        echo $preA1;
+                        ?>
 
                     </td>
                     <td>
@@ -318,13 +318,13 @@ if (isset($_GET['del'])) {
                 <tr>
                     <td width="20%" style="text-align: center; font-size: 30px; font-weight: bold;">
                         <?php
-                            if (isset($_SESSION['pre2'])) {
-                                $preA2 = $_SESSION['pre2'];
-                            } else {
-                                $preA2 = '2.0';
-                            }
-                            echo $preA2;
-                            ?>
+                        if (isset($_SESSION['pre2'])) {
+                            $preA2 = $_SESSION['pre2'];
+                        } else {
+                            $preA2 = '2.0';
+                        }
+                        echo $preA2;
+                        ?>
 
                     </td>
                     <td>
@@ -343,13 +343,13 @@ if (isset($_GET['del'])) {
                 <tr>
                     <td width="20%" style="text-align: center; font-size: 30px; font-weight: bold;">
                         <?php
-                                if (isset($_SESSION['pre3'])) {
-                                    $preA3 = $_SESSION['pre3'];
-                                } else {
-                                    $preA3 = '2.0';
-                                }
-                                echo $preA3;
-                                ?>
+                        if (isset($_SESSION['pre3'])) {
+                            $preA3 = $_SESSION['pre3'];
+                        } else {
+                            $preA3 = '2.0';
+                        }
+                        echo $preA3;
+                        ?>
 
                     </td>
                     <td>
@@ -430,8 +430,8 @@ if (isset($_GET['del'])) {
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script>
         $('document').ready(function() {
             $('#submit1').click(function(event) {

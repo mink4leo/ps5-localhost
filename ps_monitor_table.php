@@ -21,8 +21,8 @@
     <div class="container mt-5">
         <div id="showmonitor"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script>
         $(function() {
             setInterval(function() {

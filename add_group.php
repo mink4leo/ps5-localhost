@@ -15,7 +15,6 @@ for ($i = 1; $i <= $_POST["hdnLine"]; $i++) {
     $catNum = $_POST["catNum$i"];
 
 
-
     $numMatch = $db->query("SELECT count(id) from thannam_champion_groupteam WHERE id='$id'")->fetchColumn();
 
     if ($numMatch == 0) {

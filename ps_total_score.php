@@ -48,8 +48,8 @@ if (isset($_GET['ps_cat'])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOTAL SCORE</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap5.min.css">
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
@@ -66,10 +66,11 @@ if (isset($_GET['ps_cat'])) {
 <body>
     <?php include('menu.php'); ?>
 
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <h3><?php echo $_SESSION['nameMatch'] ?></h3>
+
         <div class="row justify-content-between mb-5">
-            <div class="col-8">
+            <div class="col-12">
                 <a href="ps_total_score.php?match=<?= $_GET['match'] ?>" class="btn btn-danger">SCORE-1</a>
                 <a href="ps_total_score_2.php?match=<?= $_GET['match'] ?>" class="btn btn-danger">SCORE-2</a>
                 <a href="ps_total_best.php?match=<?= $_GET['match'] ?>" class="btn btn-info">ALL BEST PALYER</a>
@@ -78,7 +79,7 @@ if (isset($_GET['ps_cat'])) {
                 <a href="ps_total_score.php?match=<?= $_GET['match'] ?>&ps_cat=3" class="btn btn-primary">PAIR</a>
                 <a href="ps_total_score.php?match=<?= $_GET['match'] ?>&ps_cat=4" class="btn btn-primary">TEAM</a>
             </div>
-            <div class="col-4">
+            <div class="col-12">
                 <span class="h1"><?= $psName; ?></span>
             </div>
         </div>
@@ -120,7 +121,7 @@ if (isset($_GET['ps_cat'])) {
 
                                     $nameAAA  = $row['nameA'] . " " . $row['nameB'] . " " . $row['nameC'];
                                     ?>
-                                    <a target="_blank" href="<?php echo $serverA?>ps_total_score_local.php?sex=<?php echo $row['sex']; ?>&match=<?= $_GET['match'] ?>&teamA=<?php echo $team['nameA']; ?>&nameA=<?= $nameAAA; ?>&catA=<?php echo $cat['namegroup'] ?>">
+                                    <a target="_blank" href="<?php echo $serverA ?>ps_total_score_local.php?sex=<?php echo $row['sex']; ?>&match=<?= $_GET['match'] ?>&teamA=<?php echo $team['nameA']; ?>&nameA=<?= $nameAAA; ?>&catA=<?php echo $cat['namegroup'] ?>">
                                         <?php echo $row['nameA']; ?>
                                         <?php
                                         if ($_GET['ps_cat'] == 3) {
@@ -153,8 +154,8 @@ if (isset($_GET['ps_cat'])) {
         </div>
 
 
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
 
         <script>
             // $(document).ready(function() {
