@@ -24,9 +24,9 @@ if ($res['poomsae'] == '3') {
     $ps = 3;
     // $dataa = 'thannam_champion_poomse3';
 }
-if ($res['poomsae'] == '') {
+if ($res['poomsae'] == '8') {
     $psp = 'POOMSAE FREE STYLE';
-    $ps = 3;
+    $ps = 8;
     // $dataa = 'thannam_champion_poomse3';
 }
 

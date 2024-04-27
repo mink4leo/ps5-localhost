@@ -26,7 +26,7 @@ for ($i = 1; $i <= $_POST["hdnLine"]; $i++) {
 
     if ($numMatch == 0) {
         $insertA = $db->prepare("INSERT INTO thannam_champion_poomsae 
-    (id,nameA,nameB,nameC,match1,sex,catA,ps_cat) VALUES('$id','$nameA','$nameB','$nameC','$match1','$sex','$catA','$ps_cat')");
+    (id,idteam,nameA,nameB,nameC,match1,sex,catA,ps_cat) VALUES('$id','$idteam','$nameA','$nameB','$nameC','$match1','$sex','$catA','$ps_cat')");
         $insertA->execute();
     }
 }
