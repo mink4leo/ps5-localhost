@@ -34,7 +34,7 @@ if (isset($_GET['resetA'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MANAGE</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> -->
     <style>
         .judd {
             justify-content: center;
