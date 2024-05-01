@@ -3,6 +3,8 @@ session_start();
 require_once("app/conn_pdo.php");
 
 error_reporting(0);
+// error_reporting(E_ALL);
+// ini_set('display_errors',1);
 
 
 if (isset($_REQUEST['submitA'])) {
@@ -405,10 +407,17 @@ if (isset($_GET['del'])) {
 
                     <td align="right">
                         <!-- <a name="ACCPRE">&nbsp;</a> -->
+                        <?php
+                        if ($AllAcc == "") {
+                            $AllAcc = number_format(4, 1);
+                        } else {
+                            $AllAcc = $AllAcc;
+                        }
+                        ?>
                         <form action="" method="POST">
                             <input type="hidden" name="j2" value="<?= $_GET['j'] ?>">
-                            <input type="hidden" name="accA" value="<?= $AllAcc; ?>">
-                            <input type="hidden" name="preA" value="<?= $AllPre; ?>">
+                            <input type="text" name="accA" value="<?= $AllAcc; ?>">
+                            <input type="text" name="preA" value="<?= $AllPre; ?>">
                             <div class="form-group">
                                 <div class="col text-right">
                                     <input type="submit" name="submitA" id='sweetA' class="btn btn-success btn-lg btn-block" style="height:80px; width:220px" value="SUBMIT">
