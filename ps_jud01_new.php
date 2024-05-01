@@ -416,8 +416,8 @@ if (isset($_GET['del'])) {
                         ?>
                         <form action="" method="POST">
                             <input type="hidden" name="j2" value="<?= $_GET['j'] ?>">
-                            <input type="text" name="accA" value="<?= $AllAcc; ?>">
-                            <input type="text" name="preA" value="<?= $AllPre; ?>">
+                            <input type="hidden" name="accA" value="<?= $AllAcc; ?>">
+                            <input type="hidden" name="preA" value="<?= $AllPre; ?>">
                             <div class="form-group">
                                 <div class="col text-right">
                                     <input type="submit" name="submitA" id='sweetA' class="btn btn-success btn-lg btn-block" style="height:80px; width:220px" value="SUBMIT">
