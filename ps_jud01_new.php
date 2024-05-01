@@ -25,7 +25,6 @@ if (isset($_REQUEST['submitA'])) {
     echo "<script language='javascript'> window.location='ps_jude.php?j=$j2'</script>";
 }
 
-
 //=================================================
 
 if (isset($_SESSION["pre1"])) {
@@ -256,16 +255,18 @@ if (isset($_GET['del'])) {
                 </form>
             </div>
             <div class="col">
-                <!-- <input type="text" name="add_to_cart" class="acc_total" value="<?= number_format($accTotal, 1) ?>" max="4.0" min="0.0" /> -->
-                <span class="success acc_total" style="border:2px solid #333;padding:30px;">
-                    <?php
-                    if (isset($_SESSION['accTotalA'])) {
-                        echo number_format($_SESSION['accTotalA'], 1);
-                    } else {
-                        echo '4.0';
-                    }
-                    ?>
-                </span>
+                <div class="card" style="align-items: center; border:border:6px solid #333;p">
+                    <!-- <span class="success acc_total" style="border:2px solid #333;padding:30px; width:400px"> -->
+                    <span class="success acc_total">
+                        <?php
+                        if (isset($_SESSION['accTotalA'])) {
+                            echo number_format($_SESSION['accTotalA'], 1);
+                        } else {
+                            echo '4.0';
+                        }
+                        ?>
+                    </span>
+                </div>
             </div>
             <div class="col">
                 <!-- <form method="post" action="">
@@ -432,11 +433,7 @@ if (isset($_GET['del'])) {
         </center>
         <div class="mb-5"></div>
 
-
-
     </div>
-
-
 
 
     <script src="js/jquery-3.6.0.min.js"></script>
